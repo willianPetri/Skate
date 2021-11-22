@@ -24,30 +24,7 @@ const Sidebar = () => {
   ]
 
   return (
-    <div className='px-8 pt-2 -mt-10 divide-y divide-gray-800'>
-      {/* {sidebarMenu.map(side => (
-      <div key={side.children.map(i => i.name)} className='py-10'>
-        <span className='tracking-widest text-gray-500 uppercase text-xxs'>
-          {side.label}
-        </span>
-        <ul className='flex flex-col pt-5 space-y-8'>
-          
-          <li key={side.children.map(i => i.name)} className='flex items-center space-x-4'>
-            {side.children.map(i => i.name)}
-              <span className='p-2 text-gray-500 bg-gray-800 rounded-xl group-hover:text-white group-hover:bg-orange'>
-                <div  className={`fill-current ${side.children.map(i => i.icon)}`} />
-              </span>
-              <a 
-                href="/" 
-                className='text-sm text-gray-500 group-hover:text-white group-hover:font-semibold'
-              >
-                {side.children.map(i => i.name)}
-              </a>
-            </li>
-         
-        </ul>
-      </div>
-      ))} */}
+    <div className='px-8 pt-2 -mt-10 divide-y divide-gray-800'>      
       {sidebarMenu.map(side => ( 
         <div key={side.children.map(i => i.name)} className='py-10'>
           <span className='tracking-widest text-gray-500 uppercase text-xxs'>
